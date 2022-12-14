@@ -1,24 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import HeroLanding from './components/HeroLanding';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='max-w-[1920px] mx-auto' >
+      <section className='page-wrapper'>
+      <Navbar />
+      </section>
+      <HeroLanding />
+    </main>
   );
 }
 
