@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import HeroLanding from './components/HeroLanding';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,7 +11,11 @@ function App() {
       <section className='page-wrapper'>
       <Navbar />
       </section>
-      <HeroLanding />
+     <div className='mb-[900px]'>
+     <HeroLanding />
+     </div>
+      <ContactUs />
+      <Footer />
     </main>
   );
 }
