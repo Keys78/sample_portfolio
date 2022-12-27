@@ -8,8 +8,7 @@ const ContactUsForm = () => {
   const initialValues = {
     name: "",
     email: "",
-    password: "",
-    confirmPassword: "",
+    message: ""
   };
 
   const [values, setValues] = useState(initialValues);
@@ -22,13 +21,14 @@ const ContactUsForm = () => {
 
   };
 
-  const sendMessage = () => {
+  const sendMessage = (e) => {
+    e.preventDefault()
     console.log(values)
   }
 
   return (
     <div className='w-full max-w-[400px]'>
-      <form onSubmit={sendMessage}>
+      <form onSubmit={(e) => sendMessage(e)}>
         <Input name={'name'} value={values.name} label='name' type='text' required={true} onHandleInputChange={(e) => onHandleInputChange(e)} />
         <Input name={'email'} value={values.email} label='email' type='text' required={true} onHandleInputChange={(e) => onHandleInputChange(e)} />
         <TextArea name={'message'} value={values.message} label='MESSAGE' type='text' required={true} onHandleInputChange={(e) => onHandleInputChange(e)} />
