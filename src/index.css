@@ -23,20 +23,22 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  { -webkit-box-shadow: 0 0 0 30px inherit inset !important;}
 
-.input-data .underline:before{ position: absolute; content: ""; height: 100%; width: 100%; background: rgb(34 197 94 ); transform: scaleX(0); transform-origin: center; transition: transform 0.3s ease;}
+.input-data .underline:before{ position: absolute; bottom: 0; content: ""; height: 100%; width: 100%; background: rgb(34 197 94 ); transform: scaleX(0); transform-origin: center; transition: transform 0.3s ease;}
 .input-data input:focus ~ .underline:before,
-.input-data input:valid ~ .underline:before{ transform: scaleX(1); }
+.input-data input:valid ~ .underline:before{ transform: scaleX(1); width: 104%;}
 
 /* textarea */
 .input-data  textarea:focus ~ label,
 .input-data textarea:valid ~ label{ transform: translateY(-20px); font-size: 13px; color: #fff; opacity: 0.5;}
-.wrapper .input-data > textarea{ all: unset; height: 100%; width: 100%; border: none; outline: none; font-size: 16px; border-bottom: 1px solid rgb(240, 240, 240);}
+.wrapper .input-data > textarea{ all: unset; padding-left: 12px; height: 100%; width: 100%; border: none; outline: none; font-size: 16px; border-bottom: 1px solid rgb(240, 240, 240);}
 .input-data textarea:focus ~ .underline:before,
-.input-data textarea:valid ~ .underline:before{ transform: scaleX(1); }
+.input-data textarea:valid ~ .underline:before{ transform: scaleX(1); width: 104%;}
 
-.wrapper .input-data > .textarea-label { padding-left: 12px; position: absolute; bottom: 35px; left: 0; font-size: 14px; text-transform: uppercase; color: rgb(165, 164, 164); pointer-events: none; transition: all 0.3s ease;}
+.wrapper .input-data > .textarea-label { padding-left: 12px; position: absolute; bottom: 50px; left: 0; font-size: 14px; text-transform: uppercase; color: rgb(165, 164, 164); pointer-events: none; transition: all 0.3s ease;}
+.margin-adjust { margin-bottom: 6px;}
 
 @media screen and (max-width: 1024px) {
   .page-wrapper { margin-left: 20px; margin-right: 20px; }
+  .ovf { overflow-x: hidden;}
 
 }

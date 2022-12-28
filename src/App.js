@@ -6,14 +6,17 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import Skillset from './components/Skillset';
 import Projects from './components/Projects';
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   return (
     <main className='max-w-[1920px] mx-auto' >
+      <ToastContainer />
       <section className='page-wrapper'>
         <Navbar />
       </section>
-      <div className='mb-[300px]'>
+      <div className='md:pb-[300px] pb-[50px] ovf'>
         <HeroLanding />
       </div>
       <Skillset />
