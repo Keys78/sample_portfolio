@@ -7,7 +7,7 @@ const Input = ({type, label, required, name, onHandleInputChange, value}) => {
             <div className="input-data">
                 <input autoComplete="off" type={type} required={required} value={value} onChange={onHandleInputChange} name={name}/>
                 <div className="underline"></div>
-                <label>{label}</label>
+                <label htmlFor={name}>{label}</label>
             </div>
         </div>
     )

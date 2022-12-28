@@ -8,7 +8,7 @@ const Navbar = () => {
                     adamKeyes
                 </div>
                 <div className="flex items-center space-x-10 md:mr-10 mr-0">
-                    <a href="/">
+                    <a href="https://github.com/Keys78/sample_portfolio" target={'_blank'}>
                         <img src={'/images/icon-github.svg'} alt="github_icon" />
                     </a>
                     <a href="/">
