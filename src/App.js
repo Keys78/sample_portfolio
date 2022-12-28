@@ -13,7 +13,7 @@ function App() {
       <section className='page-wrapper'>
         <Navbar />
       </section>
-      <div className='mb-[400px]'>
+      <div className='mb-[300px]'>
         <HeroLanding />
       </div>
       <Skillset />
