@@ -17,7 +17,7 @@ function App() {
         <HeroLanding />
       </div>
       <Skillset />
-      {/* <Projects /> */}
+      <Projects />
       <ContactUs />
       <Footer />
     </main>

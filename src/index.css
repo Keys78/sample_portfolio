@@ -36,8 +36,6 @@ input:-webkit-autofill:active  { -webkit-box-shadow: 0 0 0 30px inherit inset !i
 
 .wrapper .input-data > .textarea-label { padding-left: 12px; position: absolute; bottom: 35px; left: 0; font-size: 14px; text-transform: uppercase; color: rgb(165, 164, 164); pointer-events: none; transition: all 0.3s ease;}
 
-
-
 @media screen and (max-width: 1024px) {
   .page-wrapper { margin-left: 20px; margin-right: 20px; }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const CustomButton = ({onClick, text}) => {
     return (
-        <button onClick={onClick} className='uppercase border-b border-green-500 md:text-[24px] text-[16px]'>
+        <button onClick={onClick} className='uppercase border-b border-green-500 md:text-[20px] text-[16px]'>
             {text}
         </button>
     )
