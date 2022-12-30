@@ -6,7 +6,7 @@ const ContactUs = () => {
     return (
         <>
             <section className='bg-[#242424] w-full pt-12 pb-32 relative'>
-                <img className='absolute bottom-0 -left-40' src="/images/pattern-rings.svg" />
+                <img className='absolute bottom-0 -left-40' src="/images/pattern-rings.svg" alt='decoration_item'/>
                 <div className='page-wrapper flex lg:flex-row flex-col lg:items-start items-center justify-between'>
                     <div className='max-w-[380px] lg:text-left text-center'>
                         <h1 className=' md:text-[80px] text-[32px] leading-none'>Contact</h1>

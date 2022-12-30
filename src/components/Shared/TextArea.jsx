@@ -7,7 +7,7 @@ const TextArea = ({type, label, required, name, onHandleInputChange, value}) => 
             <div className="input-data">
                 <textarea type={type} required={required} value={value} onChange={onHandleInputChange} name={name}></textarea>
                 <div className="underline margin-adjust"></div>
-                <label className="textarea-label">{label}</label>
+                <label htmlFor={name} className="textarea-label">{label}</label>
             </div>
         </div>
     )

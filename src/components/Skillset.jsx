@@ -32,7 +32,7 @@ const Skillset = () => {
                 </div>
 
             </section>
-            <img className='absolute bottom-16 -right-64' src="/images/pattern-rings.svg" />
+            <img className='absolute bottom-16 -right-64' src="/images/pattern-rings.svg" alt='decoration_item'/>
         </div>
     )
 }
